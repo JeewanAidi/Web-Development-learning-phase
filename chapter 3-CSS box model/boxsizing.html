@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+       div{
+        width: 300px;
+        height: 250px;
+        padding: 5px;
+        border: 4px solid black;
+        background-color: red;
+       }
+    .contain{
+        box-sizing: content-box;
+    }
+    
+    .border{
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti necessitatibus saepe voluptas provident ratione inventore, atque reiciendis porro sed?
+    </div>
+    <br><br>
+    <div class="border">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, non!
+    </div>
+</body>
+</html>
