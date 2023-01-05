@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-image</title>
+    <style>
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        div {
+            background-image: url(akshya.jpg),
+                url(akshya2.jpg);
+
+            background-repeat: repeat-x,
+                repeat-y;
+
+            height: 402px;
+            width: 300px;
+        }
+
+        /* Background repeats */
+        .one {
+            background-repeat: no-repeat;
+        }
+
+        .two {
+            background-repeat: repeat;
+        }
+
+        .three {
+            background-repeat: repeat-x;
+        }
+
+        .four {
+            background-repeat: repeat-y;
+        }
+
+        .five {
+            background-repeat: space;
+        }
+
+        .six {
+            background-repeat: round;
+        }
+
+        /* Multiple images */
+        .seven {
+            background-image: url(akshya.jpg),
+                url(krishna.jpg.jpg);
+            background-repeat: repeat-x,
+                repeat-x;
+            height: 144px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>no-repeat
+            <div class="one"></div>
+        </li>
+        <li>repeat
+            <div class="two"></div>
+        </li>
+        <li>repeat-x
+            <div class="three"></div>
+        </li>
+        <li>repeat-y
+            <div class="four"></div>
+        </li>
+        <li>space
+            <div class="five"></div>
+        </li>
+        <li>round
+            <div class="six"></div>
+        </li>
+        <li>repeat-x, repeat-y (multiple images)
+            <div class="seven"></div>
+        </li>
+    </ol>
+</body>
+
+</html>
