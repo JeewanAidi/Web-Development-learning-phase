@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+    body{
+        height: 4444px;
+    }
+    li{
+        display: inline;
+    }
+     header{
+        background-color: aqua;
+        margin: 0;
+        padding: 0;
+        /* height: 70px; */
+        position: sticky;
+        top:0;
+        z-index: 1;
+        
+     }
+
+    .krishna{
+        background-color: rgb(45, 45, 132);
+        height: 50vh;
+        width: 50vw;
+        margin: auto;
+        z-index: 20;
+
+    }
+    .c1box{
+        background-color:aquamarine;
+        height: 50px;
+        width: 50px;
+        position:relative;
+        top: 0px;
+        left: 50px;
+    }
+    .c2box{
+        background-color:gray;
+        height: 70px;
+        width: 70px;
+        position:relative;
+        top: 0px;
+        left: 100px;
+    }
+.c3box{
+        background-color:white;
+        height: 50px;
+        width: 50px;
+        position:relative;
+        top: 0px;
+        left: 170px;
+}
+.box4{
+    background-color:blueviolet;
+        height: 5vh;
+        width: 20vw;
+        position:fixed;
+        top: 415px;
+        right: 40px;
+}
+.devotee{
+    background-color: red;
+    color: wheat;
+    height: 100px;
+    width: 100px;
+    font-size: 25px;
+    position: fixed;
+    bottom: 0;
+    left: 10;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <div class="krishna">
+            Krishna
+            <div class="c1box">
+                Vishnu
+            </div>
+            <div class="c2box">
+                mahadev
+            </div>
+            <div class="c3box">
+                bramha
+            </div>
+            <div class="box4">
+                Krishna is the supreme God!!!
+            </div>
+        </div>
+        <div class="devotee">
+            Devotee
+        </div>
+        
+    </main>
+</body>
+</html>
