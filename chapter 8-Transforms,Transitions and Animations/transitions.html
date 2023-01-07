@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+</head>
+<style>
+    .container{
+        background-color: black;
+        height: 50vh;
+    }
+    .box{
+        /* background-image: url(akshya2.jpg); */
+        border: 3px solid red;
+        display: inline-block;
+        
+    }
+    
+    img{
+        width: 300px;
+        /* transition: width;
+        transition-duration: 5s;
+        transition-timing-function: ease-in;
+        transition-delay: 3s; */
+        /* transition: width 3s cubic-bezier(0.075, 0.82, 0.165, 1) ; */
+        transition: width 3s ease-in-out , height 5s ease-in ;
+    }
+   
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+        <img id="rama" src="akshya2.jpg" style="width"; 766px;>
+        <button id="krishna">click here</button> 
+        </div>
+    </div>
+</body>
+<script>
+    //  rama.style.width= "400px";
+    //  rama.style.width= "50px";
+    krishna.addEventListener("click",()=>{
+        rama.style.width= "400px";
+        // if(rama.style.width==="300"){
+        //     rama.style.width= "400px";
+        // }
+        // else if( rama.style.width=== "400px";){
+        //     rama.style.width= "300px";
+        
+
+        // }
+    })
+    </script>
+</html>

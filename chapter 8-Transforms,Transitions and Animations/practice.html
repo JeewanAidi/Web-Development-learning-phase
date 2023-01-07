@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .progress{
+            background-color: red;
+            height: 3.5px;
+            animation: Jeewan 2s linear 1 normal;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            background-color: black;
+            height:90vh;
+        }
+        img{
+            animation: Jeewan2 .1s ease-in infinite normal;
+        }
+        header{
+            background-color: aqua;
+            margin: 5px opx 5px 3px ;
+            padding: 5px 0px 5px 3px;
+        }
+        
+        ul li{
+            display: inline;
+            
+        }
+        /* @keyframes Jeewan1 {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }  
+        @keyframes Jeewan2 {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }   */
+        @keyframes slider1{
+            from{
+                transform: translate(0vw);
+            }
+            to{
+                transform: translate(85vw);
+            }
+        }  
+        @keyframes  slider2 {
+            from{
+                transform: translate(0vw);
+            }
+            to{
+                transform: translate(92vw);
+            }
+        }  
+
+        .slider{
+            background-color: white;
+            height: 400px;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    .img1{
+         transform: translate(-8vw);
+         animation: slider1 1s 2s forwards;
+    }
+    .img2{
+         transform: translate(ovw);
+         animation: slider1 1s 2s forwards;
+    }
+    .img3{
+         transform: translate(8vw);
+         animation: slider1 1s 2s forwards;
+    }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <img class="img1" src="dragon2.jpg" alt="dragon2">
+            <img class="img2" src="dragon.jpg" alt="dragon">
+            <img class="img3" src="akshya.jpg" alt="akshya">
+        </div>
+            
+    </main>
+</body>
+</html>
