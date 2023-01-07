@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid properties for container</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 40vh;
+            display: grid;
+            grid-gap: 7px;
+            grid-template-columns: 1fr 2fr auto;
+            grid-template-rows: 20px 30px 50px auto;
+            /* justify-content: center; */
+            align-content: center;
+
+        }
+        .krishna{
+            background-color: blue;
+            border: 3px solid red;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="krishna">1</div>
+        <div class="krishna">2</div>
+        <div class="krishna">3</div>
+        <div class="krishna">4</div>
+        <div class="krishna">5</div>
+        <div class="krishna">6</div>
+        <div class="krishna">7</div>
+        <div class="krishna">8</div>
+        <div class="krishna">9</div>
+        <div class="krishna">0</div>
+    </div>
+</body>
+</html>

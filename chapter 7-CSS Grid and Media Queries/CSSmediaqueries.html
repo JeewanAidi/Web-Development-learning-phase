@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        #container{
+            background-color: rgb(53, 53, 150);
+            color:white;
+            border: 3px solid red;
+        }
+        @media screen and (max-width: 1200px) {
+            body{
+                background-color:green;
+            }
+            #container{
+                background-color: rgb(10, 47, 47);
+                color: pink;
+                border: 5px solid rgb(70, 44, 44);
+            }
+        }
+        @media screen and (max-width:600px) {
+            body{
+                background-color: red;
+            }
+            #container{
+                background-color: aqua;
+                color: orange;
+                border: 3px solid rgb(139, 40, 40);
+            }
+        }
+        @media screen and (max-width:325px) {
+            body{
+                background-color: yellow;
+            }
+            #container{
+                background-color: gray;
+                color:blue;
+                border: 2px solid black;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+       hare krishna hare krishna krishna krishna hare hare<br>
+       hare rama hare rama rama rama hare hare
+    </div>
+</body>
+</html>
