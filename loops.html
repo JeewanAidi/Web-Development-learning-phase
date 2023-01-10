@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in js</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a;
+    for(a=0;a<5;a++){
+        console.log(`${a} is less than 5`);
+    }
+
+
+
+    //accessing elements of array
+    let friends = new Array("Ram","Krishna","Hari","Vishnu","Mahadev");
+    for(let i=0; i<friends.length; i++){
+        console.log(friends[i])
+    }
+
+    friends.forEach(function f(element){
+        console.log("Hello Friends," + element);
+    });
+
+    for(element of friends){
+        console.log("Jay Shree," + element);
+    }
+
+
+
+
+
+
+
+
+    // accessing elements of objects
+    let bio={
+        name:"Jeewan",
+        salary:1,
+        channel:"bookiz"
+    };
+
+    for(key in bio){
+        console.log(`${key} given in bio is ${bio[key]}`);
+    }
+
+
+
+
+
+
+    let i = 1;
+    while(i<9){
+        console.log(i);
+        i++;
+    }
+
+
+
+    let j = 2;
+    do{
+        console.log(j);
+        j++;
+    }while(j<9);
+</script>
+</html>
