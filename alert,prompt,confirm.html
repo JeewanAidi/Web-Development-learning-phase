@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert , Prompt and Confirm</title>
+</head>
+<body>
+    <h1>I am Jeewan</h1>
+</body>
+<script>
+    alert("Welcome to my Website");
+
+    let name = prompt("what is your name?","Guest");
+    console.log(name);
+
+    let age = prompt("what's your age?","");
+    if(age>18){
+        console.log("you are welcome to my website");
+    }
+    else{
+        console.log("this website isn't for you");
+    }
+
+    let entry = confirm("Are you 18+ for sure?");
+    if(entry){
+        alert("You are welcome");
+        console.log("welcome to 18+ website and enjoy");
+    }
+    else{
+        alert("bye kid go and suck your mother milk");
+        console.log("hello get out of here and bring your stepmother");
+    }
+</script>
+</html>
