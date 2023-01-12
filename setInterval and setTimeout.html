@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and setTimeout</title>
+</head>
+<style>
+    #time{
+        background-color: aqua;
+        color: red;
+        height: 10vh;
+        width: 50vw;
+        border: 2px solid black;
+        border-radius: 9px;
+        padding: 10px 10px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <span id="time">The time is now</span>
+    </div>
+    
+    <script>
+        // function jeewan(krishna, rama){
+        //     console.log("Hello Jeewan, " + krishna +" " + rama);
+        // }
+
+        // timeout = setTimeout(jeewan , 2000, "krishna and rama", "is always with you");
+        // console.log(timeout);
+
+        // clearTimeout(timeout);
+
+
+
+
+        // timeout=setInterval(jeewan,1000,"krishna and rama", "is always with you");
+        // console.log(timeout);
+
+        // clearInterval(2);
+
+
+
+
+        //making simple digital clock
+        function clock(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+
+        }
+        setInterval(clock , 1000);
+
+
+
+        
+
+        
+    </script>
+</body>
+</html>
