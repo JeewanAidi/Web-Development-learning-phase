@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    
+</body>
+<script> 
+    let book = {
+        investement:"Rich dad poor dad",
+        selfhelp:"Unfuck yourself",
+        publicspeaking:"How to influence anyone"
+    }
+
+    console.log(book);
+    let p = JSON.stringify(book);
+    console.log(p);
+
+    p = p.replace('Unfuck yourself','Bhagwat Geeta');
+    console.log(p);
+
+    console.log(book);
+    let q = JSON.parse(p);
+    console.log(q);
+
+</script>
+</html>
