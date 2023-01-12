@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <titl>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Maths Object</h1>
+    </div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        console.log("The value of E is ",Math.E);
+        console.log("The value of PI is ",Math.PI);
+        console.log("The value of 3 to power 3 is ",Math.pow(3,3));
+        console.log("The value of square root of 98 is ",Math.sqrt(98));
+
+        let a = 848.9;
+        let b=3513.30;
+
+        console.log("The value of a and b is ",Math.round(a),Math.round(b));
+
+        //absolute value
+        let c = 5.99;
+        let s = -34;
+
+        console.log("The absolute value of c and s is ",Math.abs(c),Math.abs(s));
+
+        //Trignometric Functions
+        console.log("The value of sin 90 is ",Math.sin(Math.PI/2));
+
+        //Minimum and maximun values
+        console.log("The maximum value among 9,577,55 is ",Math.max(9,577,55));
+        console.log("The minimum value amaong 58,59,.35 is ",Math.min(58,59,.35));
+
+        //generating random number
+        let j = Math.random();
+        console.log("The random number is ", j)
+
+        //generating random number between 1 to 100
+        let k = 1;
+        let e = 100;
+        let n = k + (e-k)*Math.random();
+        console.log("The random number between 1 and 100 is ", n)
+
+    </script>
+</body>
+</html>
