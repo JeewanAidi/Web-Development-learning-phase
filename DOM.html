@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+    #red {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        cursor: pointer;
+    }
+
+    #green {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        cursor: pointer;
+    }
+
+    #yellow {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        cursor: pointer;
+    }
+
+    #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="yellow"></div>
+    </div>
+
+<!--     
+    <div id="container" class="navbar">
+        <div id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Help</li>
+        </div>
+    </div>
+
+    <div class="navbar">
+        another navbar
+    </div> -->
+</body>
+<script>
+    let red = document.getElementById('red')
+    red.onclick = function () {
+        console.log('You Just Clicked in Red Box.')
+        alert("You Just Clicked in Red Box.")
+    }
+
+    let green = document.getElementById('green')
+    green.onclick = function () {
+        console.log('You Just Clicked in Green Box.')
+        alert("You Just Clicked in Green Box.")
+    }
+
+    let yellow = document.getElementById('yellow')
+    yellow.onclick = () => console.log('You Just Clicked in Yellow Box.')
+
+
+    // let container = document.getElementById('container')
+    // console.log(container)
+
+    // let nav = document.getElementById('nav')
+    // consoole.log(nav)
+
+    // //to see the text inside the nav
+    // nav.innerHTML      //innerhtml is in the form of string
+    // console.log(nav.innerHTML)
+    // //to change innerhtml
+    // nav.innerHTML = "<li>Jeewan</li>"    //to change inner html in the form of string
+
+
+
+    // let nav = document.querySelector('#container>#nav>li')
+    // console.log("selector returns", nav)
+
+    
+</script>
+
+</html>
