@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+</head>
+<style>
+    #time{
+        background-color: red;
+        height: 5vh;
+        width: 40vw;
+        color: aqua;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 20px 20px;
+        font-weight: bold;
+        font-size: large;
+    }
+</style>
+<body>
+    <div class="contianer">
+        <h1>krishna</h1>
+        <span id="time">The time is</span>
+    </div>
+<script>
+    let date = new Date();
+    console.log(date)
+
+    let date1 = new Date(0);
+    console.log(date1)
+
+    let date2 = new Date(5000)
+    console.log(date2)
+    
+
+    let date4 = new Date(2028,9,8,3,8,3)
+    console.log(date4)
+
+    let yr = date4.getFullYear();
+    console.log("the year is", yr)
+
+    let month = date4.getMonth();
+    console.log("the month is", month)
+
+    let hour = date4.getMinutes();
+    console.log(hour)
+    
+    date4.setDate(99);
+    console.log(date4);
+
+    date4.setMinutes(7);
+    console.log(date4);
+
+    function updatetime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(updatetime, 1000);
+    
+ 
+</script>
+</body>
+</html>
